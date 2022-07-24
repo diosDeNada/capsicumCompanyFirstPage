@@ -1,0 +1,205 @@
+body{
+	background-color: rgb(10, 9, 19);
+	color: white;
+}
+
+p{
+	font-family: Cinzel, sans-serif;
+	font-size: 20px;
+}
+
+a {
+	text-decoration: none;
+	font-family: Cormorant SC, sans-serif;
+	font-weight: 900;
+	color: rgb(70, 13, 13);
+}
+
+p a{
+	color: aqua;
+}
+
+h2{
+	font-family: Cormorant SC, sans-serif;
+	font-size: 30px;
+	color: rgb(247, 59, 59) ;
+}
+
+h3{
+	font-size: 26px;
+	display: flex;
+}
+
+span{
+	padding-right: 10px;
+}
+
+li{
+	font-family: Cinzel, sans-serif;
+	font-size: 17px;
+}
+
+.icon {
+	width: 40px;
+	height: 40px;
+	background-color: white;
+	border-radius: 50%;
+	border-width: 0px;
+}
+
+.iconRedes{
+	width: 25px;
+	height: 25px;
+}
+
+#logo{
+	width: auto;
+	height: auto;
+	padding-right: 7px;
+}
+
+#imgsFlex{
+	display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4px;
+}
+
+.chilegaleria{
+	width: 33%;
+   height: 300px;
+   object-fit: cover;
+   margin-top: 8px;
+   padding: 0 4px;
+   border-radius: 10px;
+}
+
+img {
+	width: 200px;
+	height: auto;
+}
+
+#navBar{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	gap: 0 10px;
+	justify-items: center;
+	overflow: hidden;
+}
+
+.divSon1{
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+.divSon2{
+	grid-column-start: 1;
+	grid-row-end: 3;
+	}
+
+.divSon3{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	}
+
+.divSon4{
+	grid-row-start: 2;
+	grid-row-end: 3;
+	}
+
+.divSon5{
+	grid-column-start: 3;
+	grid-column-end: 4;
+	}
+
+.divSon6{
+	grid-row-start: 2;
+	grid-row-end: 3;
+	}
+
+header{
+	position: fixed;
+	display: flex;
+	top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+main {
+	margin-top: 100px;
+}
+
+#contenedorDiv{
+	background-color: whitesmoke;
+	display: flex;
+	width: 100vw;
+	height: 65px;
+	margin-left: -7px;
+	
+}
+
+#name,
+#email {
+	margin-right: 20px;
+}
+
+@media only screen and (min-width: 800px) {
+  img {
+		width: 400px;
+		height: auto;
+	}
+
+	#contenedorDiv{
+		height: 90px;
+	}
+
+	.divSon2,
+	.divSon4{
+		padding-right: 35px;
+	}
+
+	#navBar{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		font-size: 30px;
+		margin: auto;
+	}
+
+	.icon:hover{
+		width: 50px;
+		height: 50px;
+		background-color: gray;
+		border-radius: 50%;
+	}
+
+	.iconRedes{
+		width: 38px;
+		height: 38px;
+	}
+
+	.divSon2,
+	.divSon4 {
+		color: aqua;
+	}
+
+	textarea{
+		width: 860px;
+		height: 113px;
+	}
+
+	form{
+	display: grid;
+	grid-template-columns: auto;
+	gap: 0 10px;
+	justify-items: center;
+	overflow: hidden;
+	}
+
+	#email,
+	#name{
+		width: 300px;
+	}
+
+	}
