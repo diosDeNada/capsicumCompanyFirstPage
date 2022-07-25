@@ -4,8 +4,10 @@ body{
 }
 
 p{
-	font-family: Cinzel, sans-serif;
+	font-family: Taviraj, sans-serif;
 	font-size: 20px;
+	text-align: center;
+	margin-top: 0px;
 }
 
 a {
@@ -22,12 +24,20 @@ p a{
 h2{
 	font-family: Cormorant SC, sans-serif;
 	font-size: 30px;
-	color: rgb(247, 59, 59) ;
+	color: rgb(247, 59, 59);
+	margin-bottom: 0px;
 }
 
 h3{
 	font-size: 26px;
 	display: flex;
+	margin-bottom: 0px;
+}
+
+#proyecto,
+#productos,
+#recetas{
+	margin-bottom: 80px;
 }
 
 span{
@@ -35,13 +45,21 @@ span{
 }
 
 li{
-	font-family: Cinzel, sans-serif;
+	font-family: Taviraj, sans-serif;
 	font-size: 17px;
 }
 
 .icon {
 	width: 40px;
 	height: 40px;
+	background-color: white;
+	border-radius: 50%;
+	border-width: 0px;
+}
+
+.llamitaColor{
+	width: 20px;
+	height: 20px;
 	background-color: white;
 	border-radius: 50%;
 	border-width: 0px;
