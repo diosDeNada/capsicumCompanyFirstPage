@@ -6,8 +6,8 @@ body{
 p{
 	font-family: Taviraj, sans-serif;
 	font-size: 20px;
-	text-align: center;
 	margin-top: 0px;
+	text-align: center;
 }
 
 a {
@@ -163,6 +163,10 @@ main {
 }
 
 @media only screen and (min-width: 800px) {
+	p{
+		text-align:left;
+	}
+
   img {
 		width: 400px;
 		height: auto;
