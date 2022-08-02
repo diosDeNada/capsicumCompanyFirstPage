@@ -1,0 +1,254 @@
+body {
+	color: rgb(255, 255, 255);
+	margin: 0px;
+	background-color: black;
+	font-family: "Barlow", sans-serif;
+	text-align: center;
+}
+
+h6{
+	font-family: 'Press Start 2P', cursive;
+	font-size: 15px;
+	line-height: 1.8;
+	color: black;
+}
+h6:hover{
+	background-color: white;
+}
+
+h1{
+	font-family: Cormorant SC, serif;
+	margin: 30px auto 30px 30px;
+	font-size: 48px;
+}
+
+h2{
+	font-family: Lusitana, serif;
+	font-size: 40px;
+}
+
+h3{
+	font-size: 27px;
+}
+
+p{
+	font-size: 25px;
+	line-height: 1.6;
+}
+
+ol li,
+ul li{
+	list-style: none;
+	font-size: 20px;
+	text-align: center;
+}
+
+#header{
+	position: fixed;
+	display: flex;
+	width: 100%;
+}
+
+#navBar {
+	display: flex;
+	overflow: hidden;
+	align-items: center;
+	height: 45px;
+}
+
+#contenedorDiv{
+	background-color:  #333;;
+	display: flex;
+	width: 100%;;
+}
+
+#navBar a{
+	float: right;
+	font-size: 18px;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+}
+
+#navBar button{
+	font-size: 18px;
+}
+
+.padding1{
+	padding: 0 15px ;
+}
+
+.subNav {
+	float: left;
+	overflow: hidden;
+}
+
+.subNav .subNavbtn {
+	font-size: 18px;
+	border: none;
+	outline: none;
+	color: rgb(255, 255, 255);
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+}
+
+#navBar a:hover, .subNav:hover .subNavbtn {
+	background-color: rgb(216, 212, 238);
+	color: rgb(0, 0, 0);
+}
+
+.subNav-content {
+	display: none;
+	position: absolute;
+	right: 0;
+	background-color: rgb(236, 108, 48);
+	color: black;
+	width: 100%;
+	z-index: 1;
+	height: 55px;
+	padding: 20px 7px;
+}
+
+.subNav-content a {
+	float: left;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+}
+
+.subNav-content a:hover {
+	background-color: #eee;
+	color: black;
+}
+ 
+.subNav:hover .subNav-content {
+	display: block;
+}
+
+.barraLogo{
+	text-align: center;
+}
+
+.logo{
+	margin-top: 50px;
+	width: 300px;
+	height: 300px;
+}
+
+.gallery {  /*Esta es una galeria flex reponsiva*/
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 0 4px;
+}
+
+.gallery img{
+	width: 30%;
+	height: 300px;
+	object-fit: cover;
+	margin-top: 8px;
+	padding: 0 4px;
+	border-radius: 10px;
+	transition: transform .2s; /*Esto inicia la funcion de animación zoom*/
+}
+
+.cayendo1{
+	width: 100px;
+	height: 100px;
+}
+
+.cayendo2{
+	width: 50px;
+	height: 50px;
+}
+
+.foto{
+	width: 300px;
+	height: auto;
+	transition: transform .2s; /*Esto inicia la funcion de animación zoom*/
+}
+
+.foto:hover,
+.gallery img:hover{
+	transform: scale(1.2);/*Este :hover hace la animación de zoom sobre las imgs*/
+}
+
+.icon {
+	width: 30px;
+	height: 30px;
+	background-color: aliceblue;
+	border-radius: 50%;
+	
+}
+
+.volver{
+	color: black;
+	position: fixed;
+	display: flex;
+	font-family: Cormorant SC, serif;
+}
+
+.volverA:visited:visited{
+	color: black; /* Esto mantiene el color negro del enlace aunque ya se haya visitado*/
+}
+
+@media only screen and (min-width: 650px) {
+
+	body{
+		background-color: black;
+		background-size: cover;
+	}
+
+	h1{
+		font-size: 55px;
+	}
+
+	a {
+		font-size: 30px;
+	 }
+	
+	p{
+		text-align: center;
+	}
+
+  img {
+		width: 400px;
+		height: auto;
+	}
+
+#header,
+#contenedorDiv{
+	width: 100%;
+	text-align: center;
+}
+
+	#navBar{
+		display: flex;
+		align-items: center;
+		font-size: 30px;
+		margin: auto;
+		height: 50px;
+	}
+
+	.contenedorDiv{
+		display: flex;
+	}
+
+	#inicio,
+#proyecto,
+#productos,
+#recetas,
+#contacto{
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	.logo{
+		width: 500px;
+		height: 500px;
+		}
+
+	}
